@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Registration</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Kenya's Nature Gems</h2>
+    <ol type="I">
+        <li>Maasai Mara</li>
+        <li>Gede Ruins</li>
+        <li>Amboseli</li>
+        <li>Mida Creek</li>
+        <li>Kakamega forest</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Nature's Masterpiece</h2>
+    <img src="https://images.pexels.com/photos/949194/pexels-photo-949194.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Beautiful Scenery" width="500">
+    
+    <!-- Contacts Table -->
+    <h2>Contacts</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>123 Main St</td>
+            <td>123-456-7890</td>
+            <td>johndoe@example.com</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>456 Oak St</td>
+            <td>987-654-3210</td>
+            <td>janesmith@example.com</td>
+        </tr>
+        <tr>
+            <td>Robert Brown</td>
+            <td>789 Pine St</td>
+            <td>456-789-1230</td>
+            <td>robertbrown@example.com</td>
+        </tr>
+        <tr>
+            <td>Emily Johnson</td>
+            <td>101 Maple St</td>
+            <td>321-654-9870</td>
+            <td>emilyjohnson@example.com</td>
+        </tr>
+        <tr>
+            <td>Michael White</td>
+            <td>222 Birch St</td>
+            <td>654-321-4560</td>
+            <td>michaelwhite@example.com</td>
+        </tr>
+    </table>
+    
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required minlength="6"><br><br>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+        
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other"> <label for="other">Other</label><br><br>
+        
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="Australia">Australia</option>
+        </select><br><br>
+        
+        <label>Interests:</label>
+        <input type="checkbox" id="sports" name="interests" value="Sports"> <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="Music"> <label for="music">Music</label>
+        <input type="checkbox" id="reading" name="interests" value="Reading"> <label for="reading">Reading</label><br><br>
+        
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
